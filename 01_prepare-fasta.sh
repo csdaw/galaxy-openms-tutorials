@@ -12,6 +12,8 @@ hs_query='http://www.uniprot.org/uniprot/?query=taxonomy:9606+keyword:1185+revie
 wget -nv ${hs_query} -O "fasta/${RELEASE}_hsapiens.fasta"
 
 # download GPM cRAP fasta specific to this Galaxy tutorial
+crap='https://raw.githubusercontent.com/pravs3683/cRAP/master/cRAP_protein_database.fasta'
+wget -nv ${crap} -O "fasta/cRAP.fasta"
 
 # download several Mycoplasma proteomes and combine them
 mo_query='http://www.uniprot.org/uniprot/?query=taxonomy:2121+keyword:1185&format=fasta'
